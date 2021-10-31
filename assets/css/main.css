@@ -3550,15 +3550,6 @@ input, select, textarea {
 
 	@media screen and (max-width: 1280px) {
 
-		#wrapper > header {
-			padding: 9em 0 6.25em 0 ;
-			background-color: #000000;
-			background-image: linear-gradient(to top, rgba(104, 0, 214, 0.25), rgba(104, 0, 214, 0.25)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
-			margin-bottom: -6.5em;
-		}
-
 	}
 
 	@media screen and (max-width: 980px) {
@@ -4045,6 +4036,7 @@ input, select, textarea {
 			background-color: #000000;
 			background-image: linear-gradient(to top, rgba(104, 0, 214, 0.25), rgba(104, 0, 214, 0.25)), url("../../images/bg.jpg");
 			background-size: auto, cover;
+			background-attachment: fixed,fixed;
 			background-position: center, center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
