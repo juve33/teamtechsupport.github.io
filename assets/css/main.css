@@ -254,6 +254,14 @@ input, select, textarea {
 
 	}
 
+	@media screen and (max-width: 480px) {
+
+		div.player {
+			width: 49%;
+		}
+
+	}
+
 	strong, b {
 		font-weight: 600;
 	}
@@ -2461,7 +2469,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 1em 0;
 			width: 100%;
 		}
 
