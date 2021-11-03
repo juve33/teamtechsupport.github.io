@@ -279,13 +279,13 @@ input, select, textarea {
 
 	div.player_info h4 {
 		color: inherit;
-		margin-top: 20%;
+		margin-top: calc(33% - 1em);
 		text-shadow: 0 0 10px rgba(0, 0, 0, 0);
 		}
 
 	div.player_info p {
 		font-weight: 300;
-		margin-top: 30%;
+		margin-top: calc(33% - 1em);
 	}
 
 	div.player_info:hover {
