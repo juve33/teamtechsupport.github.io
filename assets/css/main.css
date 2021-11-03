@@ -238,6 +238,10 @@ input, select, textarea {
 				background-color: rgba(148, 46, 255, 0.075);
 			}
 
+
+/* Team */
+
+
 	section.team {
 		width: 100%;
 		vertical-align: middle;
@@ -292,6 +296,8 @@ input, select, textarea {
 		background-color: rgba(104, 0, 214, 0.8);
 		color: rgba(255, 255, 255, 1);
 	}
+
+	
 
 	strong, b {
 		font-weight: 600;
