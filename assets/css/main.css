@@ -331,6 +331,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.2em;
+		color: #ffffff;
 	}
 
 	h3 {
@@ -3336,7 +3337,7 @@ input, select, textarea {
 		}
 
 		#menu h2 {
-			border-bottom: solid 2px rgba(148, 46, 255, 0.125);
+			border-bottom: solid 2px rgba(148, 46, 255, 0.25);
 			padding-bottom: 1em;
 		}
 
@@ -3475,7 +3476,7 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			border-bottom: solid 2px rgba(148, 46, 255, 0.125);
+			border-bottom: solid 2px rgba(148, 46, 255, 0.25);
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3505,6 +3506,11 @@ input, select, textarea {
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
+			color: #ffffff;
+		}
+
+		#banner a {
+			color: #ffffff;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3597,7 +3603,6 @@ input, select, textarea {
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
-			color: #ffffff;
 		}
 
 		#wrapper > header p {
