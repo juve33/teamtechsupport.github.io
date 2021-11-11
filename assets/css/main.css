@@ -175,8 +175,9 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(148, 46, 255, 0.35);
+		border-bottom: dotted 1px rgba(148, 46, 255, 0.25);
 		color: #942eff;
+		transition: all 0.5s;
 		text-decoration: none;
 	}
 
@@ -188,7 +189,7 @@ input, select, textarea {
 
 		a.special:not(.button) {
 			text-decoration: none;
-			border-bottom: 0;
+			border-bottom: transparent;
 			display: block;
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 0.8em;
@@ -239,7 +240,7 @@ input, select, textarea {
 			}
 
 
-/* Team */
+/* Team/Players */
 
 
 	section.team {
@@ -271,8 +272,8 @@ input, select, textarea {
 	}
 
 	div.player_info {
-		background-color: rgba(104, 0, 214, 0);
-		color: rgba(255, 255, 255, 0);
+		background-color: transparent;
+		color: transparent;
 		transition: all 0.75s;
 		border-radius: 5px;
 		position: absolute;
@@ -283,13 +284,18 @@ input, select, textarea {
 
 	div.player_info h4 {
 		color: inherit;
-		margin-top: calc(33% - 1em);
-		text-shadow: 0 0 10px rgba(0, 0, 0, 0);
+		margin-top: calc((100% / 3) - 0.5em);
+		margin-bottom: 0;
+		text-shadow: 0 0 0px transparent;
+		line-height: 1em;
 		}
 
 	div.player_info p {
 		font-weight: 300;
-		margin-top: calc(33% - 1em);
+		margin-top: calc((100% / 3) - 0.5em);
+		margin-bottom: 0;
+		line-height: 1em;
+		text-align: center;
 	}
 
 	div.player_info:hover {
@@ -297,7 +303,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 1);
 	}
 
-	
+
 
 	strong, b {
 		font-weight: 600;
@@ -316,14 +322,14 @@ input, select, textarea {
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 0.75em 0;
 		text-transform: uppercase;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
-			border-bottom: 0;
+			border-bottom: transparent;
 		}
 
 		h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
@@ -332,12 +338,13 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			padding-bottom: 1em;
-			border-bottom: solid 2px rgba(148, 46, 255, 0.125);
+			border-bottom: solid 2px rgba(148, 46, 255, 0.25);
 		}
 
 	h2 {
 		font-size: 1.2em;
 		color: #ffffff;
+		text-align: center;
 	}
 
 	h3 {
@@ -347,6 +354,7 @@ input, select, textarea {
 
 	h4 {
 		font-size: 0.8em;
+		text-shadow: 0 0 5px #6800d6, 0 0 10px #6800d6, 0 0 15px #6800d6, 0 0 20px #6800d6;
 	}
 
 	h5 {
@@ -414,7 +422,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px rgba(148, 46, 255, 0.125);
+		border-bottom: solid 2px rgba(148, 46, 255, 0.25);
 		margin: 2.5em 0;
 	}
 
@@ -2147,13 +2155,251 @@ input, select, textarea {
 
 		}
 
+
 /* Section/Article */
+
 
 	section.special, article.special {
 		text-align: center;
 	}
 
+	section.news_upper {
+		width: 100%;
+		margin-bottom: 0.75em;
+		text-align: center;
+	}
+
+	article.latest {
+		width: 65%;
+		vertical-align: middle;
+		display: inline-block;
+		margin-bottom: 2.7em;
+	}
+
+div.latest-content {
+	background-color: rgba(104, 0, 214, 0.8);
+	color: #ffffff;
+	transition: all 0.75s;
+	position: absolute;
+	vertical-align: middle;
+	padding: 0.675em;
+	width: 100%;
+	height: 2.7em;
+	bottom: -2.7em;
+	overflow: auto;
+	scrollbar-width: none;
+	border-radius: 5px;
+}
+
+div.latest-content:hover {
+	height: calc(100% + 2.7em);
+}
+
+	div.latest-content h3 {
+		color: inherit;
+		margin-bottom: 0;
+		text-shadow: 0 0 0px transparent;
+		}
+
+	div.latest-content h4 {
+		color: inherit;
+		text-transform: none;
+		margin-top: 1em;
+		margin-bottom: 0;
+		text-shadow: 0 0 0px transparent;
+		}
+
+		div.latest-content a {
+		vertical-align: middle;
+		color: #ffffff;
+		}
+
+	section.upcoming {
+		height: inherit;
+		width: 34.5%;
+		padding: 0.75em 0em 0.75em 1.5em;
+		display: inline-grid;
+	}
+
+	section.upcoming h3 {
+		height: inherit;
+		line-height: 1em;
+		padding: 0.75em;
+		margin-bottom: 0.75em;
+		border-bottom: solid 2px rgba(148, 46, 255, 0.25);
+		display: inline-grid;
+	}
+
+	div.upcoming-content {
+		overflow: auto;
+		scrollbar-width: none;
+		max-height: 25em;
+	}
+
+	div.upcoming-content h3 {
+		padding: 0em;
+		margin-bottom: 0.75em;
+		padding: 0.75em;
+	}
+
+	article.upcoming {
+		margin-bottom: 0.75em;
+		display: inline-grid;
+		width: 100%;
+		text-align: center;
+		border: solid 2px rgba(148, 46, 255, 1);
+	}
+
+	article.upcoming time {
+		border-bottom: solid 2px rgba(148, 46, 255, 1);
+		font-weight: 600;
+		transition: all 0.5s;
+		line-height: 1em;
+		padding: 0.5em;
+		font-family: Raleway, Helvetica, sans-serif;
+	}
+
+	article.upcoming time:hover {
+		text-shadow: 0 0 5px #6800d6, 0 0 10px #6800d6, 0 0 15px #6800d6, 0 0 20px #6800d6;
+	}
+
+	div.match_info {
+		width: 100%;
+	}
+
+	div.teams {
+		transition: all 0.5s;
+		padding: 1em 0;
+		display: inline-grid;
+		width: 65%;
+		font-weight: 400;
+	}
+
+	div.teams:hover {
+		text-shadow: 0 0 5px #6800d6, 0 0 10px #6800d6, 0 0 15px #6800d6, 0 0 20px #6800d6;
+	}
+
+	a.button_match {
+		transition: all 0.5s;
+		width: 33%;
+		height: 100%;
+		float: right;
+		text-transform: uppercase;
+		font-weight: 600;
+		right: 0px;
+		border-left: solid 2px rgba(148, 46, 255, 1);
+		padding: 1em 0;
+		background-color: #942eff;
+		color: #000000;
+	}
+
+	a.button_match:hover {
+		background-color: #000000;
+		color: #942eff;
+	}
+
+	section.news {
+		width: 100%;
+		text-align: center;
+	}
+
+	article.standard {
+		width: 33%;
+		padding: 0.75em;
+		margin-bottom: 2.4em;
+		display: inline-grid;
+	}
+
+	div.standard-content {
+		background-color: rgba(104, 0, 214, 0.8);
+		color: #ffffff;
+		transition: all 0.75s;
+		position: absolute;
+		vertical-align: middle;
+		padding: 0.6em;
+		width: 100%;
+		height: 2.4em;
+		bottom: -2.4em;
+		overflow: auto;
+		scrollbar-width: none;
+		border-radius: 5px;
+	}
+
+	div.standard-content:hover {
+		height: calc(100% + 2.4em);
+	}
+
+	div.standard-content h3 {
+		color: inherit;
+		font-size: 0.8em;
+		margin-bottom: 0;
+		text-shadow: 0 0 0px transparent;
+	}
+
+	div.standard-content h4 {
+		color: inherit;
+		text-transform: none;
+		margin-top: 1em;
+		margin-bottom: 0;
+		text-shadow: 0 0 0px transparent;
+	}
+
+	div.standard-content a {
+	vertical-align: middle;
+	color: #ffffff;
+	}
+
+	p {
+		font-weight: 300;
+		margin-top: 0.75em;
+		margin-bottom: 0;
+		text-align: justify;
+		vertical-align: middle;
+	}
+
+	@media screen and (max-width: 900px) {
+
+		section.news_upper {
+			height: auto;
+		}
+
+		article.latest {
+			width: 100%;
+		}
+
+		section.upcoming {
+			width: 100%;
+		}
+
+		article.standard {
+			width: 49.5%;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		article.standard {
+			width: 100%;
+		}
+
+	}
+
+
+/* Scrollbar for anything but Firefox */
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+
 /* Form */
+
 
 	form {
 		margin: 0 0 2em 0;
@@ -2251,7 +2497,7 @@ input, select, textarea {
 		background: rgba(148, 46, 255, 0.025);
 		border-radius: 5px;
 		border: none;
-		border: solid 2px rgba(148, 46, 255, 0.125);
+		border: solid 2px rgba(148, 46, 255, 0.25);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2508,7 +2754,6 @@ input, select, textarea {
 
 		.image.fit {
 			display: inline-grid;
-			margin: 0 0 1em 0;
 			width: 100%;
 		}
 
@@ -3186,6 +3431,7 @@ input, select, textarea {
 					-ms-transition: background-color 0.2s ease-in-out;
 					transition: background-color 0.2s ease-in-out;
 					border-radius: 5px;
+					transition: all 0.5s;
 					box-shadow: inset 0 0 0 2px rgba(148, 46, 255, 0.125);
 					padding: 0 1.35em;
 				}
@@ -3345,6 +3591,8 @@ input, select, textarea {
 		#menu h2 {
 			border-bottom: solid 2px rgba(148, 46, 255, 0.25);
 			padding-bottom: 1em;
+			color: #942eff;
+			text-shadow: 0 0 5px #6800d6, 0 0 10px #6800d6, 0 0 15px #6800d6, 0 0 20px #6800d6;
 		}
 
 		#menu .close {
@@ -3512,6 +3760,7 @@ input, select, textarea {
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
+			text-align: center;
 			color: #ffffff;
 		}
 
@@ -3605,7 +3854,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(148, 46, 255, 0.5);
+			border-bottom: solid 2px rgba(148, 46, 255, 0.25);
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
