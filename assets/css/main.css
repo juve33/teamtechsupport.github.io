@@ -272,19 +272,20 @@ input, select, textarea {
 	}
 
 	div.player_info {
-		background-color: transparent;
-		color: transparent;
+		background-color: rgba(104, 0, 214, 0.8);
+		color: rgba(255, 255, 255, 1);
 		transition: all 0.75s;
 		border-radius: 5px;
 		position: absolute;
 		text-align: center;
 		width: 100%;
 		height: 100%;
+		opacity: 0;
 	}
 
 	div.player_info h4 {
 		color: inherit;
-		margin-top: calc((100% / 3) - 0.5em);
+		margin-top: calc(((100% - 2em) / 3) - 0.5em);
 		margin-bottom: 0;
 		text-shadow: 0 0 0px transparent;
 		line-height: 1em;
@@ -292,15 +293,26 @@ input, select, textarea {
 
 	div.player_info p {
 		font-weight: 300;
-		margin-top: calc((100% / 3) - 0.5em);
+		margin-top: calc(((100% - 2em) / 3) - 0.5em);
 		margin-bottom: 0;
 		line-height: 1em;
 		text-align: center;
 	}
 
 	div.player_info:hover {
-		background-color: rgba(104, 0, 214, 0.8);
-		color: rgba(255, 255, 255, 1);
+		opacity: 1;
+	}
+
+	div.player_socialmedia {
+		background-color: rgba(0, 0, 0, 0.4);
+		height: 2em;
+		line-height: 2em;
+		margin-top: calc(((100% - 2em) / 3) - 1em);
+	}
+
+	div.player_socialmedia a {
+		margin: 1em;
+		color: inherit;
 	}
 
 
@@ -2186,13 +2198,14 @@ div.latest-content {
 	width: 100%;
 	height: 2.7em;
 	bottom: -2.7em;
-	overflow: auto;
+	overflow: hidden;
 	scrollbar-width: none;
 	border-radius: 5px;
 }
 
 div.latest-content:hover {
 	height: calc(100% + 2.7em);
+	overflow: auto;
 }
 
 	div.latest-content h3 {
@@ -2248,6 +2261,7 @@ div.latest-content:hover {
 		width: 100%;
 		text-align: center;
 		border: solid 2px rgba(148, 46, 255, 1);
+		border-radius: 5px;
 	}
 
 	article.upcoming time {
@@ -2320,13 +2334,14 @@ div.latest-content:hover {
 		width: 100%;
 		height: 2.4em;
 		bottom: -2.4em;
-		overflow: auto;
+		overflow: hidden;
 		scrollbar-width: none;
 		border-radius: 5px;
 	}
 
 	div.standard-content:hover {
 		height: calc(100% + 2.4em);
+		overflow: auto;
 	}
 
 	div.standard-content h3 {
@@ -3432,7 +3447,7 @@ div.latest-content:hover {
 					transition: background-color 0.2s ease-in-out;
 					border-radius: 5px;
 					transition: all 0.5s;
-					box-shadow: inset 0 0 0 2px rgba(148, 46, 255, 0.125);
+					box-shadow: inset 0 0 0 2px rgba(148, 46, 255, 0.25);
 					padding: 0 1.35em;
 				}
 
@@ -3845,7 +3860,8 @@ div.latest-content:hover {
 /* Wrapper */
 
 	#wrapper > header {
-		padding: 11em 0 2.25em 0 ;
+		margin-top: 3.5em;
+		padding: 2.25em 0 2.25em 0 ;
 	}
 
 		#wrapper > header .inner {
