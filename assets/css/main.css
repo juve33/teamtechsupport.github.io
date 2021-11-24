@@ -2203,7 +2203,7 @@ div.latest-content {
 	border-radius: 5px;
 }
 
-div.latest-content:hover {
+article.latest:hover div.latest-content {
 	height: calc(100% + 2.7em);
 	overflow: auto;
 }
@@ -2339,7 +2339,7 @@ div.latest-content:hover {
 		border-radius: 5px;
 	}
 
-	div.standard-content:hover {
+	article.standard:hover div.standard-content {
 		height: calc(100% + 2.4em);
 		overflow: auto;
 	}
@@ -2380,6 +2380,18 @@ div.latest-content:hover {
 
 		article.latest {
 			width: 100%;
+			margin-bottom: 0;
+		}
+
+		div.latest-content {
+			height: 100%;
+			bottom: 0;
+			opacity: 0;
+		}
+
+		article.latest:hover div.latest-content {
+			opacity: 1;
+			height: 100%
 		}
 
 		section.upcoming {
@@ -2388,6 +2400,18 @@ div.latest-content:hover {
 
 		article.standard {
 			width: 49.5%;
+			margin-bottom: 0;
+		}
+
+		div.standard-content {
+			height: 100%;
+			bottom: 0;
+			opacity: 0;
+		}
+
+		article.standard:hover div.standard-content {
+			opacity: 1;
+			height: 100%
 		}
 
 	}
@@ -2403,13 +2427,100 @@ div.latest-content:hover {
 
 /* Scrollbar for anything but Firefox */
 
-
 ::-webkit-scrollbar {
   width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: transparent;
+}
+
+
+/* Associates */
+
+
+div.associate {
+	width: 33%;
+	padding: 0.75em;
+	margin-bottom: 2.4em;
+	display: inline-grid;
+}
+
+div.associate img {
+	display: block;
+}
+
+div.associate a {
+	border-bottom: none;
+}
+
+div.associate-content {
+	background-color: rgba(104, 0, 214, 0.8);
+	color: #ffffff;
+	transition: all 0.75s;
+	position: absolute;
+	vertical-align: middle;
+	padding: 0.6em;
+	width: 100%;
+	height: 2.4em;
+	bottom: -2.4em;
+	overflow: hidden;
+	scrollbar-width: none;
+	border-radius: 5px;
+}
+
+div.associate:hover div.associate-content {
+	height: calc(100% + 2.4em);
+	overflow: auto;
+}
+
+div.associate-content h3 {
+	color: inherit;
+	text-align: center;
+	font-size: 0.8em;
+	margin-bottom: 0;
+	text-shadow: 0 0 0px transparent;
+}
+
+div.associate-content h4 {
+	color: inherit;
+	text-transform: none;
+	margin-top: 1em;
+	margin-bottom: 0;
+	text-shadow: 0 0 0px transparent;
+}
+
+div.associate-content a {
+vertical-align: middle;
+color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+
+	div.associate {
+		width: 49.5%;
+		margin-bottom: 0;
+	}
+
+	div.associate-content {
+		height: 100%;
+		bottom: 0;
+		opacity: 0;
+	}
+
+	div.associate:hover div.associate-content {
+		opacity: 1;
+		height: 100%
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	div.associate {
+		width: 100%;
+	}
+
 }
 
 
