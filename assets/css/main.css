@@ -177,7 +177,7 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px rgba(148, 46, 255, 0.25);
 		color: #942eff;
-		transition: all 0.5s;
+		transition: all 0.75s;
 		text-decoration: none;
 	}
 
@@ -2448,6 +2448,7 @@ div.associate {
 
 div.associate img {
 	display: block;
+	cursor: pointer;
 }
 
 div.associate a {
@@ -2491,8 +2492,8 @@ div.associate-content h4 {
 }
 
 div.associate-content a {
-vertical-align: middle;
-color: #ffffff;
+	vertical-align: middle;
+	color: #ffffff;
 }
 
 @media screen and (max-width: 900px) {
@@ -2522,6 +2523,13 @@ color: #ffffff;
 	}
 
 }
+
+/*@media screen and (hover: none) {
+
+	div.associate-content a.box {
+		href: '';
+	}
+}*/
 
 
 /* Form */
@@ -3509,6 +3517,11 @@ color: #ffffff;
 		z-index: 10000;
 	}
 
+	body.is-menu-visible #header {
+		/*opacity: 0;*/
+		top: -3.5em;
+	}
+
 		#header h1 {
 			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
@@ -3581,7 +3594,7 @@ color: #ffffff;
 					}
 
 					#header nav a[href="#menu"]:hover {
-						background-color: rgba(0, 0, 0, 0.05);
+						background-color: rgba(0, 0, 0, 0.25);
 					}
 
 					#header nav a[href="#menu"]:active {
