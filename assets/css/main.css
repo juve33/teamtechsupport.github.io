@@ -226,7 +226,6 @@ input, select, textarea {
 				line-height: 1.75em;
 				margin-right: 0.85em;
 				text-align: center;
-				text-indent: 0.15em;
 				vertical-align: middle;
 				width: 2em;
 			}
@@ -314,6 +313,43 @@ input, select, textarea {
 		margin: 0.75em;
 		color: inherit;
 	}
+
+
+/* History */
+
+	section.timeline {
+		width: 100%;
+		text-align: center;
+	}
+
+	div.event_left {
+		width: calc(50% + 2px);
+		border-right: solid 2px rgba(148, 46, 255, 1);
+	}
+
+	div.event_right {
+		width: calc(50% - 2px);
+		margin-left: 50%;
+		border-left: solid 2px rgba(148, 46, 255, 1);
+	}
+
+	div.event_content {
+		padding: 0 0.75em;
+	}
+
+	section.timeline h3 {
+		border-top: dotted 2px rgba(148, 46, 255, 0.5);
+		padding-top: 0.75em;
+	}
+
+	section.timeline time {
+		transition: all 0.75s;
+	}
+
+	section.timeline time:hover {
+		text-shadow: 0 0 5px #6800d6, 0 0 10px #6800d6, 0 0 15px #6800d6, 0 0 20px #6800d6;
+	}
+
 
 
 
@@ -2915,7 +2951,7 @@ div.associate-content a {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: '➔';
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
