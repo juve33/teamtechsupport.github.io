@@ -325,12 +325,14 @@ input, select, textarea {
 	div.event_left {
 		width: calc(50% + 2px);
 		border-right: solid 2px rgba(148, 46, 255, 1);
+		padding: 1em 0;
 	}
 
 	div.event_right {
 		width: calc(50% - 2px);
 		margin-left: 50%;
 		border-left: solid 2px rgba(148, 46, 255, 1);
+		padding: 1em 0;
 	}
 
 	div.event_content {
@@ -4467,7 +4469,6 @@ div.associate-content a {
 /* Footer */
 
 	#footer .inner {
-		padding: 5em 0 0em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4501,7 +4502,7 @@ div.associate-content a {
 		#footer .inner .copyright {
 			border-top: solid 2px rgba(148, 46, 255, 1,0);
 			list-style: none;
-			margin: 4em 0 2em 0;
+			margin: 0em 0 2em 0;
 			padding: 2em 0 0 0;
 			width: 100%;
 		}
@@ -4552,7 +4553,6 @@ div.associate-content a {
 		}
 
 			#footer .inner {
-				padding: 3em 3em 1em 3em ;
 				display: block;
 				width: 100%;
 			}
@@ -4568,7 +4568,7 @@ div.associate-content a {
 				}
 
 				#footer .inner .copyright {
-					margin: 4em 0 2em 0;
+					margin: 0em 0 2em 0;
 				}
 
 	}
@@ -4612,7 +4612,7 @@ div.associate-content a {
 	@media screen and (max-width: 360px) {
 
 		#footer .inner {
-			padding: 2em 1.5em 0.1em 1.5em ;
+			padding: 0em 1.5em 0.1em 1.5em ;
 		}
 
 	}
