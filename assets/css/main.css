@@ -317,6 +317,32 @@ cover;
 	}
 
 
+/* Meme */
+
+	div.meme {
+		display: inline;
+		margin: none;
+		break-before: avoid-column;
+	}
+
+	img.meme {
+		position: absolute;
+		max-width: 0rem;
+		min-width: 0rem;
+		z-index: 9999;
+		transition: all 0.75s;
+		left: 50vw;
+		top: 50vh;
+	}
+
+	div.meme:hover img.meme {
+		max-width: 40rem;
+		min-width: 40rem;
+		left: calc( 50vw - 20rem );
+		top: calc( 50vh - 15rem );
+	}
+
+
 /* Stats */
 
 	section.stats {
@@ -332,6 +358,7 @@ cover;
 			display: inline-grid;
 			vertical-align: middle;
 			border-radius: 5px;
+			text-align: center;
 			box-shadow: 00px 00px 1.5em #6800d6;
 	}
 
