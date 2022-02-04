@@ -326,7 +326,7 @@ cover;
 	}
 
 	img.meme {
-		position: absolute;
+		position: fixed;
 		max-width: 0rem;
 		min-width: 0rem;
 		z-index: 9999;
